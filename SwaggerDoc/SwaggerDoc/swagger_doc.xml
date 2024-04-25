@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerDoc</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerDoc.Controllers.HomeController.Test1">
+             <summary>
+             Retrieves test data.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/Home/Test1
+            
+             Sample response:
+            
+                 "Test1"
+            
+             </remarks>
+        </member>
+        <member name="M:SwaggerDoc.Controllers.HomeController.Test2(SwaggerDoc.TestModel)">
+             <summary>
+             Creates test data.
+             </summary>
+             <param name="Model">The test model.</param>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Home/Test2
+                 {
+                     "Id": 1,
+                     "Name": "TestName",
+                     "Description": "TestDescription"
+                 }
+            
+             Sample response:
+            
+                 "1 TestName TestDescription"
+            
+             </remarks>
+        </member>
+        <member name="P:SwaggerDoc.TestModel.Id">
+            <example>1</example>
+        </member>
+        <member name="P:SwaggerDoc.TestModel.Name">
+            <example>Test</example>
+        </member>
+        <member name="P:SwaggerDoc.TestModel.Description">
+            <example>Test Description</example>
+        </member>
+    </members>
+</doc>
